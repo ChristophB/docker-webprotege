@@ -7,8 +7,7 @@ Usage:
 docker run -d -p 8080:8080 christophbe/webprotege
 ```
 
-The startup may take some time. After it has finished you can access WebProtegé at <http://localhost:8080/>.
-Make sure port 8080 is not used by another service of the host system (otherwise map to a non occupied port).
+The startup may take some time. After it has finished you can access WebProtegé at <http://localhost:8080/>. Make sure port 8080 is not used by another service of the host system (otherwise map to a non occupied port).
 
 You can add another container or host folder as volume in `/data/webprotege` to store projects and ontologies outside of the WebProtegé container. e.g.:
 ```sh
