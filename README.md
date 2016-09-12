@@ -18,7 +18,8 @@ Install MongoDB on the host system and add a host entry for 'mongodb' to the Web
 ### Option 2:
 Start a MongoDB container and link it to the WebProtegé container with the parameter `--link [mongodb-container-name]:mongodb`.
 
-***Example:***```sh
+***Example:***
+```sh
 docker run --name mongodb-container -d mongo
 docker run -d -p 8080:8080 --link mongodb-container:mongodb christophbe/webprotege
 ```
