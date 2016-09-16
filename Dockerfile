@@ -1,6 +1,9 @@
 FROM tomcat:8.0-jre8
 MAINTAINER Christoph Beger
 
+# MongoDB
+RUN apt-get -qq update && apt-get -qq install -y mongodb
+
 # Deployment
 WORKDIR /usr/local/tomcat/webapps
 RUN rm -rf *
@@ -14,8 +17,7 @@ RUN echo \
   webprotege.data.directory=/data/webprotege"\n" \
   webprotege.application.host=localhost"\n" \
   > ROOT/webprotege.properties
-RUN echo "\n"mongodb.host=mongodb"\n" >> ROOT/WEB-INF/classes/webprotege.properties
 
 EXPOSE 8080
 
-CMD catalina.sh run
+CMD sh /etc/init.d/mongodb start && catalina.sh run
