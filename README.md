@@ -6,6 +6,8 @@ This image uses tomcat:8.0-jre8.
 * v2.6.0 , latest ([v2.6.0/Dockerfile](https://github.com/ChristophB/docker-webprotege/blob/master/Dockerfile))
 * v2.6.0-standalone ([v2.6.0-standalone/Dockerfile](https://github.com/ChristophB/docker-webprotege/blob/v2.6.0-standalone/Dockerfile))
 
+Standalone images  contain a MongoDB installation.
+
 ## Usage:
 ```sh
 docker run -d -p 8080:8080 christophbe/webprotege
