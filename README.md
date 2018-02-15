@@ -3,10 +3,10 @@
 This image uses tomcat:8.0-jre8.
 
 ## Supported tags and respective Dockerfile links
-* v2.6.0 , latest ([v2.6.0/Dockerfile](https://github.com/ChristophB/docker-webprotege/blob/master/Dockerfile))
+* v3.0.0 , latest ([v3.0.0/Dockerfile](https://github.com/ChristophB/docker-webprotege/blob/v3.0.0/Dockerfile))
+* v3.0.0-standalone ([v3.0.0-standalone/Dockerfile](https://github.com/ChristophB/docker-webprotege/blob/v3.0.0-standalone/Dockerfile))
+* v2.6.0 ([v2.6.0/Dockerfile](https://github.com/ChristophB/docker-webprotege/blob/master/Dockerfile))
 * v2.6.0-standalone ([v2.6.0-standalone/Dockerfile](https://github.com/ChristophB/docker-webprotege/blob/v2.6.0-standalone/Dockerfile))
-* v3.0.0-dev ([v3.0.0-dev/Dockerfile](https://github.com/ChristophB/docker-webprotege/blob/v3.0.0-dev/Dockerfile))
-* v3.0.0-dev-standalone ([v3.0.0-dev-standalone/Dockerfile](https://github.com/ChristophB/docker-webprotege/blob/v3.0.0-dev-standalone/Dockerfile))
 
 Standalone images  contain a MongoDB installation.
 
