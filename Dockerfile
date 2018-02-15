@@ -1,20 +1,14 @@
 FROM tomcat:8.0-jre8
 MAINTAINER Christoph Beger
 
-# Deployment
 WORKDIR /usr/local/tomcat/webapps
-RUN rm -rf *
-RUN mkdir -p /data/webprotege
-RUN wget -q --no-check-certificate -O webprotege.war https://github.com/protegeproject/webprotege/releases/download/v2.6.0/webprotege-2.6.0.war
-RUN unzip -q webprotege.war -d ROOT && rm webprotege.war
 
-# Add properties file to webprotege webapps folder
-RUN touch ROOT/webprotege.properties
-RUN echo \
-  webprotege.data.directory=/data/webprotege"\n" \
-  webprotege.application.host=localhost"\n" \
-  > ROOT/webprotege.properties
-RUN echo "\n"mongodb.host=mongodb"\n" >> ROOT/WEB-INF/classes/webprotege.properties
+RUN rm -rf *
+RUN mkdir -p /srv/webprotege /etc/webprotege /var/log/webprotege
+RUN wget -q --no-check-certificate -O webprotege.war https://github.com/protegeproject/webprotege/releases/download/v3.0.0/webprotege-3.0.0.war
+RUN wget -q --no-check-certificate -O /root/webprotege-cli.jar https://github.com/protegeproject/webprotege/releases/download/v3.0.0/webprotege-3.0.0-cli.jar
+
+ADD *.properties /etc/webprotege/
 
 EXPOSE 8080
 
