@@ -15,7 +15,7 @@ Standalone images  contain a MongoDB installation.
 docker run -d -p 8080:8080 christophbe/webprotege
 ```
 
-The startup may take some time. After it has finished you can access WebProtégé at <http://localhost:8080/webprotege>. Make sure port 8080 is not used by another service of the host system (otherwise map to a non occupied port). ***Be sure to connect the container to an existing MongoDB instance (see below)!***
+The startup may take some time. After it has finished you can access WebProtégé at <http://localhost:8080/>. Make sure port 8080 is not used by another service of the host system (otherwise map to a non occupied port). ***Be sure to connect the container to an existing MongoDB instance (see below)!***
 
 ## MongoDB:
 There is no MongoDB instance in this image. So you have to link this container to an existing instance.
