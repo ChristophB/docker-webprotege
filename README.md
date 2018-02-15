@@ -1,4 +1,4 @@
-# docker-webprotege (standalone)
+# docker-webprotege
 
 This image uses tomcat:8.0-jre8.
 
