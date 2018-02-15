@@ -22,6 +22,8 @@ The startup may take some time. After it has finished you can access WebProtég�
 2. Open <http://localhost:8080/> and use the admin credentials to login.
 3. Open <http://localhost:8080/#application/settings> and finish the configuration of WebProtégé.
 
+***Warning: The data storage of v2.6.0 and v3.0.0 are not compatible!*** ([WebProtégé-2.x-Migration](https://github.com/protegeproject/webprotege/wiki/WebProtégé-2.x-Migration)) 
+
 ## MongoDB:
 There is no MongoDB instance in this image. So you have to link this container to an existing instance.
 
