@@ -17,6 +17,11 @@ docker run -d -p 8080:8080 christophbe/webprotege
 
 The startup may take some time. After it has finished you can access WebProtégé at <http://localhost:8080/>. Make sure port 8080 is not used by another service of the host system (otherwise map to a non occupied port). ***Be sure to connect the container to an existing MongoDB instance (see below)!***
 
+***WebProtégé v3.0.0 only:***
+1. Run: `docker exec -it [webprotege-container] java -jar /root/webprotege-cli.jar create-admin-account` and set up an admin account.
+2. Open <http://localhost:8080/> and use the admin credentials to login.
+3. Open <http://localhost:8080/#application/settings> and finish the configuration of WebProtégé.
+
 ## MongoDB:
 There is no MongoDB instance in this image. So you have to link this container to an existing instance.
 
