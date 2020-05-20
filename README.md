@@ -1,5 +1,10 @@
 # docker-webprotege
 
+## Outdated!
+There is now an official docker image available at https://hub.docker.com/r/protegeproject/webprotege and https://github.com/protegeproject/webprotege.
+
+---
+
 This image uses tomcat:8.0-jre8.
 
 ## Supported tags and respective Dockerfile links
